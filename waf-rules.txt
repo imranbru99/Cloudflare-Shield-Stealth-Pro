@@ -1,0 +1,14 @@
+# Compatibility file — full safe pack lives in rules/stealth-pro.txt
+# Old contains(".md"/".map"/".well-known") expressions broke docs, source maps, and Let's Encrypt.
+
+(
+  ends_with(http.request.uri.path, ".env")
+  or ends_with(http.request.uri.path, ".bak")
+  or ends_with(http.request.uri.path, ".sql")
+  or ends_with(http.request.uri.path, ".htpasswd")
+  or http.request.uri.path contains "/.git/"
+  or http.request.uri.path contains "/.env"
+  or http.request.uri.path contains "/wp-config.php"
+  or http.request.uri.path contains "/.aws/"
+  or http.request.uri.path contains "/.ssh/"
+)

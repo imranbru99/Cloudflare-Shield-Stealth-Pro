@@ -1,0 +1,42 @@
+# Stealth Pro — Cloudflare Custom WAF Rule (Block)
+# Safe ends_with / path probes — does NOT blanket-block .html/.php/.md/.well-known ACME
+
+(
+  ends_with(http.request.uri.path, ".env")
+  or ends_with(http.request.uri.path, ".env.local")
+  or ends_with(http.request.uri.path, ".env.production")
+  or ends_with(http.request.uri.path, ".flaskenv")
+  or ends_with(http.request.uri.path, ".bak")
+  or ends_with(http.request.uri.path, ".backup")
+  or ends_with(http.request.uri.path, ".old")
+  or ends_with(http.request.uri.path, ".orig")
+  or ends_with(http.request.uri.path, ".save")
+  or ends_with(http.request.uri.path, ".swp")
+  or ends_with(http.request.uri.path, ".swo")
+  or ends_with(http.request.uri.path, ".tmp")
+  or ends_with(http.request.uri.path, ".log")
+  or ends_with(http.request.uri.path, ".sql")
+  or ends_with(http.request.uri.path, ".dump")
+  or ends_with(http.request.uri.path, ".pem")
+  or ends_with(http.request.uri.path, ".key")
+  or ends_with(http.request.uri.path, ".htpasswd")
+  or ends_with(http.request.uri.path, ".htaccess")
+  or ends_with(http.request.uri.path, ".DS_Store")
+  or ends_with(http.request.uri.path, ".npmrc")
+  or ends_with(http.request.uri.path, "phpinfo.php")
+  or ends_with(http.request.uri.path, "composer.json")
+  or ends_with(http.request.uri.path, "composer.lock")
+  or ends_with(http.request.uri.path, "id_rsa")
+  or http.request.uri.path contains "/.git/"
+  or http.request.uri.path contains "/.svn/"
+  or http.request.uri.path contains "/.env"
+  or http.request.uri.path contains "/.aws/"
+  or http.request.uri.path contains "/.azure/"
+  or http.request.uri.path contains "/.vscode/"
+  or http.request.uri.path contains "/.idea/"
+  or http.request.uri.path contains "/.dockerenv"
+  or http.request.uri.path contains "/wp-config.php"
+  or http.request.uri.path contains "/.ssh/"
+  or http.request.uri.path eq "/server-status"
+  or http.request.uri.path eq "/server-info"
+)

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#083344"/><stop offset="100%" stop-color="#070b12"/></linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#67e8f9"/><stop offset="100%" stop-color="#0891b2"/></linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <text x="64" y="78" fill="#eef3ff" font-size="30" font-weight="700" font-family="Segoe UI, Arial">Stealth Pro</text>
+  <text x="64" y="114" fill="#91a0b8" font-size="18" font-family="Segoe UI, Arial">Cloudflare Shield  elite sensitive-file WAF</text>
+  <rect x="64" y="140" width="170" height="44" rx="22" fill="url(#btn)"/>
+  <text x="149" y="168" text-anchor="middle" fill="#042f2e" font-size="15" font-weight="700" font-family="Segoe UI, Arial">Get rule pack</text>
+  <rect x="640" y="120" width="560" height="480" rx="22" fill="#101826" stroke="rgba(145,160,184,0.2)"/>
+  <text x="668" y="160" fill="#91a0b8" font-size="13" letter-spacing="2" font-family="Segoe UI, Arial">STEALTH RADAR</text>
+  <rect x="668" y="184" width="160" height="70" rx="12" fill="#070b12" stroke="rgba(145,160,184,0.18)"/>
+  <rect x="840" y="184" width="160" height="70" rx="12" fill="#070b12" stroke="rgba(145,160,184,0.18)"/>
+  <rect x="1012" y="184" width="160" height="70" rx="12" fill="#070b12" stroke="rgba(145,160,184,0.18)"/>
+  <text x="748" y="218" text-anchor="middle" fill="#eef3ff" font-size="22" font-weight="700" font-family="Segoe UI, Arial">100+</text>
+  <text x="748" y="240" text-anchor="middle" fill="#91a0b8" font-size="11" font-family="Segoe UI, Arial">PROBES</text>
+  <text x="920" y="218" text-anchor="middle" fill="#eef3ff" font-size="22" font-weight="700" font-family="Segoe UI, Arial">Block</text>
+  <text x="920" y="240" text-anchor="middle" fill="#91a0b8" font-size="11" font-family="Segoe UI, Arial">ACTION</text>
+  <text x="1092" y="218" text-anchor="middle" fill="#eef3ff" font-size="22" font-weight="700" font-family="Segoe UI, Arial">Edge</text>
+  <text x="1092" y="240" text-anchor="middle" fill="#91a0b8" font-size="11" font-family="Segoe UI, Arial">LAYER</text>
+  <rect x="668" y="280" width="504" height="48" rx="10" fill="#070b12" stroke="rgba(145,160,184,0.18)"/>
+  <text x="688" y="310" fill="#cbd5e1" font-size="14" font-family="Consolas, monospace">GET /.env.production</text>
+  <rect x="1050" y="292" width="100" height="24" rx="12" fill="#ef4444"/><text x="1100" y="309" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" font-family="Segoe UI, Arial">BLOCKED</text>
+  <rect x="668" y="344" width="504" height="48" rx="10" fill="#070b12" stroke="rgba(145,160,184,0.18)"/>
+  <text x="688" y="374" fill="#cbd5e1" font-size="14" font-family="Consolas, monospace">GET /.aws/credentials</text>
+  <rect x="1050" y="356" width="100" height="24" rx="12" fill="#ef4444"/><text x="1100" y="373" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" font-family="Segoe UI, Arial">BLOCKED</text>
+  <rect x="668" y="408" width="504" height="48" rx="10" fill="#070b12" stroke="rgba(145,160,184,0.18)"/>
+  <text x="688" y="438" fill="#cbd5e1" font-size="14" font-family="Consolas, monospace">GET /.well-known/acme-challenge/&</text>
+  <rect x="1050" y="420" width="100" height="24" rx="12" fill="#22c55e"/><text x="1100" y="437" text-anchor="middle" fill="#052e16" font-size="11" font-weight="700" font-family="Segoe UI, Arial">ALLOWED</text>
+  <text x="64" y="680" fill="#64748b" font-size="14" font-family="Segoe UI, Arial">Imran Ahmed · imrandev.bd/contact</text>
+</svg>

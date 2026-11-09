@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stealth Pro — Cloudflare Shield WAF | Imran Ahmed</title>
+  <meta name="description" content="Stealth Pro is an elite Cloudflare WAF ruleset that blocks secret-file scanners and config probes at the edge — safe ends_with matching, zero origin changes." />
+  <meta name="author" content="Imran Ahmed" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#070b12;--ink:#eef3ff;--muted:#91a0b8;--line:rgba(145,160,184,.18);--card:#101826;--cyan:#22d3ee;--cyan2:#0891b2}
+    *{box-sizing:border-box}body{margin:0;font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);background:radial-gradient(900px 500px at 12% -12%,rgba(34,211,238,.18),transparent 55%),radial-gradient(700px 420px at 100% 0%,rgba(8,145,178,.14),transparent 50%),var(--bg)}
+    a{color:var(--cyan);text-decoration:none}.wrap{width:min(1100px,calc(100% - 2rem));margin:0 auto}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{display:flex;gap:10px;align-items:center;font-family:"Space Grotesk",sans-serif;font-weight:700}
+    .mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(145deg,#67e8f9,#0891b2);color:#042f2e;font-size:12px;font-weight:800}
+    .btn{display:inline-flex;padding:11px 16px;border-radius:999px;border:1px solid var(--line);color:var(--ink);font-weight:700}
+    .btn.primary{background:linear-gradient(180deg,#67e8f9,#0891b2);color:#042f2e;border:0}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;padding:24px 0 64px;align-items:center}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}}
+    .eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;margin-bottom:12px}
+    h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:0 0 14px}
+    .lede{color:var(--muted);font-size:1.05rem;line-height:1.65;max-width:34rem}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .dash{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 28px 70px rgba(0,0,0,.4)}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 14px}
+    .kpis div{background:#070b12;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+    .kpis b{display:block;font-size:20px}.kpis span{color:var(--muted);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+    .row{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:10px;background:#070b12;border:1px solid var(--line);margin-bottom:8px;font-size:13px}
+    .badge{border-radius:999px;padding:2px 8px;font-size:11px;font-weight:700;background:#22c55e;color:#052e16}
+    .badge.block{background:#ef4444;color:#fff}
+    section{padding:8px 0 64px}section h2{font-family:"Space Grotesk",sans-serif;font-size:1.65rem;margin:0 0 10px}
+    section>p{color:var(--muted);max-width:40rem}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}}
+    .card{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .card h3{margin:0 0 8px;font-size:1.02rem}.card p{margin:0;color:var(--muted);line-height:1.55;font-size:.95rem}
+    footer{border-top:1px solid var(--line);padding:36px 0 50px;color:var(--muted);font-size:14px}
+    footer h3{color:var(--ink);font-family:"Space Grotesk",sans-serif;margin:0 0 10px}
+    .contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px 14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand"><span class="mark">SP</span> Stealth Pro</div>
+      <div style="display:flex;gap:10px">
+        <a class="btn" href="https://github.com/imranbru99/Cloudflare-Shield-Stealth-Pro">GitHub</a>
+        <a class="btn primary" href="https://imrandev.bd/contact">Hire Imran</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Cloudflare Shield · WAF</div>
+        <h1>Elite edge rules that hide your secrets.</h1>
+        <p class="lede">Stealth Pro blocks scanners hunting <strong>.env</strong>, backups, Git metadata, cloud credentials, and IDE leftovers — with safe matching that keeps ACME, docs, and real pages online.</p>
+        <div class="actions">
+          <a class="btn primary" href="rules/stealth-pro.txt">Get rule pack</a>
+          <a class="btn" href="#install">Install</a>
+        </div>
+      </div>
+      <aside class="dash">
+        <div style="color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase">Stealth radar</div>
+        <div class="kpis">
+          <div><b>100+</b><span>probes</span></div>
+          <div><b>Block</b><span>action</span></div>
+          <div><b>Edge</b><span>layer</span></div>
+        </div>
+        <div class="row"><span>GET /.env.production</span><span class="badge block">BLOCKED</span></div>
+        <div class="row"><span>GET /.aws/credentials</span><span class="badge block">BLOCKED</span></div>
+        <div class="row"><span>GET /.well-known/acme-challenge/…</span><span class="badge">ALLOWED</span></div>
+        <div class="row"><span>GET /docs/guide.md</span><span class="badge">ALLOWED</span></div>
+      </aside>
+    </section>
+    <section>
+      <h2>Why Stealth Pro</h2>
+      <p>Older “contains .md / .well-known” packs break documentation and certificate renewals. This release uses precise path logic.</p>
+      <div class="grid">
+        <article class="card"><h3>Secrets &amp; backups</h3><p>Env files, dumps, keys, htpasswd, and backup suffixes stay dark to the public internet.</p></article>
+        <article class="card"><h3>Dev privacy</h3><p>Blocks `.vscode`, `.idea`, `.npmrc`, and Docker/env artifacts when exposed via URL.</p></article>
+        <article class="card"><h3>Zero app deploy</h3><p>Paste into Cloudflare Custom Rules. No plugin. No origin rewrite.</p></article>
+      </div>
+    </section>
+    <section id="install">
+      <h2>Install</h2>
+      <p>Cloudflare → Security → WAF → Custom rules → Create → paste <code>rules/stealth-pro.txt</code> → Action: Block → Deploy.</p>
+    </section>
+    <footer>
+      <h3>Custom WAF engineering — Imran Ahmed</h3>
+      <p>Need stack-specific stealth packs or a full edge audit? Reach out for future development.</p>
+      <div class="contacts">
+        <a href="https://imrandev.bd/contact">imrandev.bd/contact</a>
+        <a href="mailto:me@imrandev.bd">me@imrandev.bd</a>
+        <a href="https://wa.me/8801576918420">WhatsApp +880 1576-918420</a>
+        <a href="https://github.com/imranbru99">GitHub</a>
+        <a href="https://linkedin.com/in/imranbru99">LinkedIn</a>
+        <a href="https://x.com/imrandev_bd">X / Twitter</a>
+        <a href="https://youtube.com/@ImranDevBD">YouTube</a>
+        <a href="https://instagram.com/imranbru99">Instagram</a>
+        <a href="https://facebook.com/ExpertImranDev">Facebook</a>
+        <a href="https://tiktok.com/@imrandev_bd">TikTok</a>
+        <a href="https://www.threads.net/@imranbru99">Threads</a>
+        <a href="https://pinterest.com/imrandev_bd">Pinterest</a>
+        <a href="https://linktr.ee/ExpertImranDev">Linktree</a>
+      </div>
+      <p style="margin-top:20px">© Imran Ahmed · Cloudflare Shield Stealth Pro · MIT</p>
+    </footer>
+  </div>
+</body>
+</html>
